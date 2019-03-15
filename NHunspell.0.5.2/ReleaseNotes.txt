@@ -1,0 +1,83 @@
+Version of NHunspell: 0.5.2 Beta
+
+Versions of the included libraries:
+NHunspell: 1.2.8
+Hyphen: 2.8
+
+Licence:
+NHunspell is tri liecnced under GPL/LGPL/
+
+Authors:
+Author of International Ispell is Geoff Kuenning.
+Author of MySpell is Kevin Hendricks.
+Author of Hunspell is László Németh.
+Author of the original C API is Caolan McNamara.
+Author of the Aspell table-driven phonetic transcription algorithm and code is Björn Jacke.
+Author of NHunspell is Thomas Maierhofer
+
+NHunspell Source Code:
+http://nhunspell.sourceforge.net
+
+Original Hunspell Source Code:
+http://hunspell.souzrceforge.net
+
+
+
+Sample Code for using Hunspell and Hyphen
+*****************************************************************************************************************************
+using System;
+using System.Collections.Generic;
+using NHunspell;
+
+namespace UnitTests
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("NHunspell functions and classes demo");
+            
+            Console.WriteLine("");
+            Console.WriteLine("Spell Check with with Hunspell");
+
+            // Important: Due to the fact Hunspell will use unmanaged memory you have to serve the IDisposable pattern
+            // In this block of code this is be done by a using block. But you can also call hunspell.Dispose()
+            using (Hunspell hunspell = new Hunspell("en_us.aff", "en_us.dic"))
+            {
+                Console.WriteLine("Check if the word 'Recommendation' is spelled correct"); 
+                bool correct = hunspell.Spell("Recommendation");
+                Console.WriteLine("Recommendation is spelled " + (correct ? "correct" : "not correct"));
+
+                Console.WriteLine("");
+                Console.WriteLine("Make suggestions for the word 'Recommendatio'");
+                List<string> suggestions = hunspell.Suggest("Recommendatio");
+                Console.WriteLine("There are " + suggestions.Count.ToString() + " suggestions" );
+                foreach (string suggestion in suggestions)
+                {
+                    Console.WriteLine("Suggestion is: " + suggestion );
+                }
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("Hyphenation with Hyph");
+
+            // Important: Due to the fact Hyphen will use unmanaged memory you have to serve the IDisposable pattern
+            // In this block of code this is be done by a using block. But you can also call hyphen.Dispose()
+            using (Hyphen hyphen = new Hyphen("hyph_en_us.dic"))
+            {
+                Console.WriteLine("Get the hyphenation of the word 'Recommendation'"); 
+                HyphenResult hyphenated = hyphen.Hyphenate("Recommendation");
+                Console.WriteLine("'Recommendation' is hyphenated as: " + hyphenated.HyphenatedWord ); 
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+
+

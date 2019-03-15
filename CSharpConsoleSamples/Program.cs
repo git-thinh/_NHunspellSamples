@@ -113,18 +113,20 @@ namespace CSharpConsoleSamples
                 Console.WriteLine("hunspell must be used to get the word stem 'car' via Stem().");
                 Console.WriteLine("hunspell generates the plural forms of the synonyms via Generate()");
                 ThesResult tr = thes.Lookup("cars", hunspell);
-                
-                if( tr.IsGenerated )
-                    Console.WriteLine("Generated over stem (The original word form wasn't in the thesaurus)");
-                foreach( ThesMeaning meaning in tr.Meanings )
+                if (tr != null)
                 {
-                    Console.WriteLine();
-                    Console.WriteLine("  Meaning: " + meaning.Description );
-
-                    foreach (string synonym in meaning.Synonyms)
+                    if (tr.IsGenerated)
+                        Console.WriteLine("Generated over stem (The original word form wasn't in the thesaurus)");
+                    foreach (ThesMeaning meaning in tr.Meanings)
                     {
-                        Console.WriteLine("    Synonym: " + synonym);
+                        Console.WriteLine();
+                        Console.WriteLine("  Meaning: " + meaning.Description);
 
+                        foreach (string synonym in meaning.Synonyms)
+                        {
+                            Console.WriteLine("    Synonym: " + synonym);
+
+                        }
                     }
                 }
             }
@@ -203,20 +205,22 @@ namespace CSharpConsoleSamples
                 Console.WriteLine("hunspell must be used to get the word stem 'car' via Stem().");
                 Console.WriteLine("hunspell generates the plural forms of the synonyms via Generate()");
                 ThesResult tr = engine["en"].LookupSynonyms("cars", true);
-                if (tr.IsGenerated)
-                    Console.WriteLine("Generated over stem (The original word form wasn't in the thesaurus)");
-                foreach (ThesMeaning meaning in tr.Meanings)
+                if (tr != null)
                 {
-                    Console.WriteLine();
-                    Console.WriteLine("  Meaning: " + meaning.Description);
-
-                    foreach (string synonym in meaning.Synonyms)
+                    if (tr.IsGenerated)
+                        Console.WriteLine("Generated over stem (The original word form wasn't in the thesaurus)");
+                    foreach (ThesMeaning meaning in tr.Meanings)
                     {
-                        Console.WriteLine("    Synonym: " + synonym);
+                        Console.WriteLine();
+                        Console.WriteLine("  Meaning: " + meaning.Description);
 
+                        foreach (string synonym in meaning.Synonyms)
+                        {
+                            Console.WriteLine("    Synonym: " + synonym);
+
+                        }
                     }
                 }
-
             }
 
             Console.WriteLine("");
