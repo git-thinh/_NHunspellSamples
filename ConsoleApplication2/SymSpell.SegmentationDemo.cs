@@ -59,6 +59,7 @@ namespace symspell.SegmentationDemo
             {
                 Correct(input, symSpell);
             }
+            Console.ReadLine();
         }
 
         private static void Correct(string input, SymSpell symSpell)
@@ -67,7 +68,8 @@ namespace symspell.SegmentationDemo
             var suggestion = symSpell.WordSegmentation(input);
 
             //display term and frequency
-            Console.WriteLine(suggestion.correctedString + " " + suggestion.distanceSum.ToString("N0") + " " + suggestion.probabilityLogSum.ToString());
+            //Console.WriteLine(suggestion.correctedString + " " + suggestion.distanceSum.ToString("N0") + " " + suggestion.probabilityLogSum.ToString());
+            Console.WriteLine(suggestion.Item1 + " " + suggestion.Item2  + " " + suggestion.Item3.ToString());
         }
     }
 }

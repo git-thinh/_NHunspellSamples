@@ -55,8 +55,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\frequency_dictionary_en_82_765.txt" />
-    <Content Include="frequency_dictionary_en_82_765.txt" />
+    <Content Include="frequency_dictionary_en_82_765.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

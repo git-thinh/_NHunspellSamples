@@ -60,6 +60,7 @@ namespace symspell.CompoundDemo
             {
                 Correct(input, symSpell);
             }
+            Console.ReadLine();
         }
 
         private static void Correct(string input, SymSpell symSpell)

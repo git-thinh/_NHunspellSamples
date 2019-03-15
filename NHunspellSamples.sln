@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymSpell", "ConsoleApplicat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHunspell128", "NHunspell128\NHunspell128.csproj", "{3CF6AC64-8445-442B-A65C-FAC57B201561}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NHunspell", "NHunspell", "{065D2EB0-7E88-42C1-893C-3F7E97F7832E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SymSpell", "SymSpell", "{02F645E1-74B4-46D6-9AEB-4AC17D17E3B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +46,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FD99DDAC-6F46-4898-AAA8-D3D0354B437D} = {065D2EB0-7E88-42C1-893C-3F7E97F7832E}
+		{84094F94-6824-48FD-9B01-B584A3360AE2} = {065D2EB0-7E88-42C1-893C-3F7E97F7832E}
+		{7AE0C8E6-014E-4B6E-A4CD-806E7F3A7EEA} = {02F645E1-74B4-46D6-9AEB-4AC17D17E3B9}
+		{3CF6AC64-8445-442B-A65C-FAC57B201561} = {065D2EB0-7E88-42C1-893C-3F7E97F7832E}
 	EndGlobalSection
 EndGlobal
