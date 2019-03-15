@@ -1,0 +1,2 @@
+NetSpell.SpellChecker.Dictionary.WordDictionary.Initialize: Loading Dictionary:..\\..\\..\\..\\dic\en-US.dic
+NetSpell.SpellChecker.Dictionary.WordDictionary.Initialize: Dictionary Loaded BaseWords:62074; PrefixRules:7; SuffixRules:16; PhoneticRules:105

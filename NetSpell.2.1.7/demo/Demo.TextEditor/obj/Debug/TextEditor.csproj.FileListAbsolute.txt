@@ -1,0 +1,12 @@
+G:\NHunspell\NetSpell.2.1.7\demo\Demo.TextEditor\bin\Debug\TextEditor.exe.config
+G:\NHunspell\NetSpell.2.1.7\demo\Demo.TextEditor\bin\Debug\TextEditor.exe
+G:\NHunspell\NetSpell.2.1.7\demo\Demo.TextEditor\bin\Debug\TextEditor.pdb
+G:\NHunspell\NetSpell.2.1.7\demo\Demo.TextEditor\bin\Debug\NetSpell.SpellChecker.dll
+G:\NHunspell\NetSpell.2.1.7\demo\Demo.TextEditor\bin\Debug\NetSpell.SpellChecker.xml
+G:\NHunspell\NetSpell.2.1.7\demo\Demo.TextEditor\obj\Debug\TextEditor.csprojResolveAssemblyReference.cache
+G:\NHunspell\NetSpell.2.1.7\demo\Demo.TextEditor\obj\Debug\TextEditor.AboutForm.resources
+G:\NHunspell\NetSpell.2.1.7\demo\Demo.TextEditor\obj\Debug\TextEditor.DocumentForm.resources
+G:\NHunspell\NetSpell.2.1.7\demo\Demo.TextEditor\obj\Debug\TextEditor.MainForm.resources
+G:\NHunspell\NetSpell.2.1.7\demo\Demo.TextEditor\obj\Debug\TextEditor.csproj.GenerateResource.Cache
+G:\NHunspell\NetSpell.2.1.7\demo\Demo.TextEditor\obj\Debug\TextEditor.exe
+G:\NHunspell\NetSpell.2.1.7\demo\Demo.TextEditor\obj\Debug\TextEditor.pdb
