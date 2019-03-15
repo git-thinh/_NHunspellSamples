@@ -1,0 +1,17 @@
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\CustomWords-en_US.txt
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\de_DE_frami.aff
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\de_DE_frami.dic
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\en_US.aff
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\en_US.dic
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\hyph_de_DE.dic
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\hyph_en_US.dic
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\th_en_US_new.dat
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\Hunspellx64.dll
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\Hunspellx86.dll
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\th_en_US_v2.dat
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\CSharpConsoleSamples.exe
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\CSharpConsoleSamples.pdb
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\NHunspell.dll
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\bin\Debug\NHunspell.pdb
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\obj\Debug\CSharpConsoleSamples.exe
+G:\NHunspell\_NHunspellSamples\CSharpConsoleSamples\obj\Debug\CSharpConsoleSamples.pdb
